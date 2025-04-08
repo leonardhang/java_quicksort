@@ -30,7 +30,7 @@ public class Main {
         }
         ListQuickSort(numbers, 0, numbers.size() -1);
         String sortedNumbers = numbers.stream().map(Objects::toString).collect(Collectors.joining(" "));
-        System.out.print("数据类型有误，请输入10个整数，以空格分开：" + sortedNumbers);
+        System.out.print("排序后的结果：" + sortedNumbers);
     }
 
     private static void ListQuickSort(List<Integer> numbers, int start, int end) {
